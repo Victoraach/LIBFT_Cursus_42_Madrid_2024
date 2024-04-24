@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-// Check if char 'c' is in 'set'
+// Check if char 'c' is in 'set'. checks in start and finsh of str
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*result;
@@ -33,23 +33,19 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (result);
 }
 /*
-#include <stddef.h>
-
-int	main()
+int	main(void)
 {
-	char const *cad1 = "Holaaa";
-    char const *can1 = "Ho";
+	char const *cad1 = "HolaaalHo";
+    char const *can1 = "H";
     char *f1;
     f1 = ft_strtrim(cad1, can1);
     printf("Devuelve: |%s| \n", f1);
-
 
     char const *cad2 = "k/ksk/ 2pp2 sk/kjdk/ ";
     char const *can2 = "k/ ";
     char *f2;
     f2 = ft_strtrim(cad2, can2);
     printf("Devuelve: |%s| \n", f2);
-
 
 	return (0);
 }*/

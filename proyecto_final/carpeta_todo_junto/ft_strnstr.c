@@ -37,21 +37,21 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t n)
 	return (NULL);
 }
 /*
-#include <stdio.h>
-#include <string.h>
-#include <stddef.h>
-
-int    main()
+int    main(void)
 {
     char cad[] = "Hola mundo 42_12345";
     char scad[] = "mundo";
     char *f;
     char *f2;
 
-    f = ft_strnstr(cad, scad, 20);
-    printf("La subcadena se encuentra de %s \n", f);
-    //f2 = strnstr(cad, scad, 20);
-    //printf("La subcadena se encuentra de %s \n", f2);
-    return (0);
-
+	printf("\nCadena: %s \n", cad);
+	printf("Subcadena a encontrar: %s \n", scad);
+    
+	f = ft_strnstr(cad, scad, 20);
+    printf("\nft --> La subcadena empieza en: %s \n", f);
+    
+	f2 = strnstr(cad, scad, 20);
+    printf("Original --> La subcadena empieza en: %s \n\n", f2);
+    
+	return (0);
 }*/

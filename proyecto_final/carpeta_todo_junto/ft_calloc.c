@@ -15,21 +15,42 @@
 // Allocates zero-initialized memory for 'count' elements of 'size'.
 void	*ft_calloc(size_t count, size_t size)
 {
-	void	*p;
+	void			*buff;
+	unsigned char	*ptrbuff;
+	size_t			szmem;
 
-	p = malloc(size * count);
-	if (p == NULL)
+	if (count != 0 && SIZE_MAX / count < size)
+		szmem = SIZE_MAX;
+	szmem = (unsigned int)count * size;
+	buff = (void *) malloc(szmem);
+	if (buff == NULL)
+	{
+		errno = ENOMEM;
 		return (NULL);
-	ft_bzero(p, count * size);
-	return (p);
+	}
+	ptrbuff = (unsigned char *) buff;
+	while (szmem--)
+		*ptrbuff++ = 0;
+	return (buff);
 }
 /*
-#include <stddef.h>
-int	main()
+int	main(void)
 {
-	char *p;
-	p = ft_calloc(5, 2);
-	write(1, p, 10);
-	write(1, "\n", 1);
-	return(0);
+	int	*buff;
+	int	i;
+
+	i = 0;
+	buff = calloc (4, sizeof(int));
+	buff[0] = 23;
+	buff[1] = -6;
+	buff[2] = 23564;
+	buff[3] = -5548;
+	printf("\n");
+	printf("Array de enteros con memoria reservada con ft_calloc(): ");
+	while (i < 4)
+	{
+		printf(" %d ", buff[i]);
+		i++;
+	}
+	printf("\n");
 }*/

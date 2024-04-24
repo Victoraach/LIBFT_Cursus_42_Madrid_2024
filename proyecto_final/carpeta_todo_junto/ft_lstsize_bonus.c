@@ -26,8 +26,7 @@ int	ft_lstsize(t_list *lst)
 	return (i);
 }
 /*
-#include <stdio.h>
-int main ()
+int main (void)
 {
 	t_list *node1 = ft_lstnew("nathan");
 	t_list *node2 = ft_lstnew("anibal");
@@ -39,5 +38,4 @@ int main ()
 	printf("El tamaño de la lista es %d\n", size_lst);
 
 	return 0;
-}
-*/
+}*/

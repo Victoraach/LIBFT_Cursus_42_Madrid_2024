@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-// Copies 'n' bytes from 'src' to 'dst'
+// Copies 'n' bytes from 'src' to 'dst', no overlap
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned int	i;
@@ -28,11 +28,20 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	return (dest);
 }
 /*
-#include <stddef.h>
-#include <stdio.h>
-int	main(void)
+int    main(void)
 {
-	char	src[5] = "Pato";
-	char	dest[5];
-	printf("%s\n", ft_memcpy(dest, src, sizeof(dest)));
+    char    dst_memcpy[] = "¡Hola mundo!";
+    char    src_memcpy[] = "¡Adios Edmundo!";
+
+    printf("Prueba de ft_memcpy()\n");
+    printf("*** Copiamos %s en %s ***\n", src_memcpy, dst_memcpy);
+    printf("5 caracteres memcpy() %s\n", memcpy(dst_memcpy, src_memcpy, 5));
+    printf("5 caracts ft_memcpy() %s\n", ft_memcpy(dst_memcpy, src_memcpy, 5));
+    printf("8 caracteres memcpy() %s\n", memcpy(dst_memcpy, src_memcpy, 8));
+    printf("8 caracts ft_memcpy() %s\n", ft_memcpy(dst_memcpy, src_memcpy, 8));
+    printf("*** Copiamos %s en %s ***\n", NULL, NULL);
+    printf("8 caracteres memcpy() %s\n", memcpy(NULL, NULL, 8));
+    printf("8 caracteres ft_memcpy() %s\n", ft_memcpy(NULL, NULL, 8));
+    
+    return (0);
 }*/

@@ -30,18 +30,17 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)s);
 	return (last_occurrence);
 }
-
 /*
-#include <stdio.h>
-
-int main (void){
+int main (void)
+{
   
-char *str = "Hello, World!";
+	char *str = "Hello, World!";
 
-printf("\nletra es: %s", ft_strrchr(str, 'W'));
-printf("\nletra es: %s", ft_strrchr(str, 'o'));
-printf("\nletra es: %s", ft_strrchr(str, 'z'));
-printf("\nletra es: %s", ft_strrchr(str, '\0'));
-return (0);
-}
-*/
+	printf("\nEl string es: %s", str);
+	printf("\nletra es W: %s", ft_strrchr(str, 'W'));
+	printf("\nletra es o: %s", ft_strrchr(str, 'o'));
+	printf("\nletra es z: %s", ft_strrchr(str, 'z'));
+	printf("\nletra es 'vacio': %s", ft_strrchr(str, '\0'));
+
+	return (0);
+}*/

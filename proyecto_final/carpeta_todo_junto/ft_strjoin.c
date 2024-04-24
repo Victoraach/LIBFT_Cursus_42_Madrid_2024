@@ -31,20 +31,14 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	join[i] = '\0';
 	return (join);
 }
-
 /*
-#include <stdio.h>
-#include <stddef.h>
-
-int main (void){
+int main (void)
+{
 	
-char str1[] = "Hello, ";
-char str2[] = "World!";
-	
-printf("\nel valor del join es: %s\n", ft_strjoin(str1, str2));
-printf("\nel valor del empty_join es: %s\n", ft_strjoin(NULL, str2));
+	char str1[] = "Hello, ";
+	char str2[] = "World!";
+		
+	printf("\nel valor del join es: %s\n", ft_strjoin(str1, str2));
 
-
-return (0);
-}
-*/
+	return (0);
+}*/

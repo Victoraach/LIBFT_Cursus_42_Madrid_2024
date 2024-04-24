@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-// Applies function 'f' to each char of string 's' with index
+// Applies function 'f' to each char of string 's'. Modify the source str
 void	ft_striteri(char *s, void (*f)(unsigned	int, char *))
 {
 	int	i;
@@ -27,21 +27,21 @@ void	ft_striteri(char *s, void (*f)(unsigned	int, char *))
 	}
 }
 /*
+void test_function(unsigned int i, char *s) 
 {
 	i = 0;
 	while (*s >= 'a' && *s <= 'z')
 		s[0] -= 32;
 }
-#include <stddef.h>
-#include <stdio.h>
-#include <unistd.h>
+
 int main ()
 {
 	char str [] = "nathan";
 
-	printf("antes: %s\n", str);
-	ft_striteri(str, test_function);
-    printf("despues: %s\n", str);
+	printf("Referencia: %s\n", str);
+    printf("antes de aplicar ft: %s\n", str);
+    ft_striteri(str, test_function);
+	printf("despues de aplicar ft: %s\n", str);
+
 	return (0);
-}
-*/
+}*/

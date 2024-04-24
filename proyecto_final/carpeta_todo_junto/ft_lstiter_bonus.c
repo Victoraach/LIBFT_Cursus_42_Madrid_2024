@@ -33,14 +33,13 @@ void	duplicate_function(void *content)
 	free(duplicated);
 }
 
-int main ()
+int main (void)
 {
 	t_list *lst = ft_lstnew("hola");
-    ft_lstadd_back(&lst, ft_lstnew(" como "));
+    ft_lstadd_back(&lst, ft_lstnew("como"));
     ft_lstadd_back(&lst, ft_lstnew("estas"));
 
 	ft_lstiter(lst, duplicate_function);
 
 	return 0;
-}
-*/
+}*/

@@ -30,24 +30,24 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	return (0);
 }
 /*
-#include <stdio.h>
-#include <stddef.h>
+int main (void)
+{
+	char arr1[] = {1, 2, 3};
+	char arr2[] = {1, 2, 4};
+	printf("diferencia ft: %d\n", ft_memcmp(arr1, arr2, sizeof(arr1)));
+	printf("diferencia f: %d\n", memcmp(arr1, arr2, sizeof(arr1)));
 
-int main (void){
+
+	int a = 123;
+	int b = 123;
+	printf("\ndiferencia ft: %d\n", ft_memcmp(&a, &b, sizeof(int)));
+	printf("diferencia f: %d\n", memcmp(&a, &b, sizeof(int)));
 	
-char arr1[] = {1, 2, 3};
-char arr2[] = {1, 2, 4};
-printf("el valor diferencia es: %d\n", ft_memcmp(arr1, arr2, sizeof(arr1)));
 
+	char cad1[] = "h4ola";
+	char cad2[] = "hola";
+	printf("\ndiferencia ft: %d\n", ft_memcmp(cad1, cad2, 7));
+	printf("diferencia f: %d\n", memcmp(cad1, cad2, 7));
 
-int a = 123;
-int b = 123;
-printf("\nel valor diferencia es: %d\n", ft_memcmp(&a, &b, sizeof(int)));
-
-char cad1[] = "h4ola";
-char cad2[] = "hola";
-printf("\nel valor diferencia es: %d\n", ft_memcmp(cad1, cad2, 7));
-
-return (0);
-}
-*/
+	return (0);
+}*/

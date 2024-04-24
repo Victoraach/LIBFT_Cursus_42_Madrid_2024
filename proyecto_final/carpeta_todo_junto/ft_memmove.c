@@ -12,7 +12,6 @@
 
 #include "libft.h"
 
-
 static void	overlap_copy(char *dst, char *src, size_t len)
 {
 	size_t	i;
@@ -37,7 +36,7 @@ static void	overlap_copy(char *dst, char *src, size_t len)
 	}
 }
 
-// Moves 'n' bytes from 'src' to 'dst' safely handling overlaps
+// Moves 'n' bytes from 'src' to 'dst', yes overlaps
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	char	*c_dst;
@@ -51,11 +50,19 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	return (dst);
 }
 /*
-#include <stddef.h>
-int main (void)
+int    main(void)
 {
-    char src[] = "Hello";
-    char dest[6];
-    ft_memmove(dest, src, sizeof(src));
+  	char *string;
+	char *cadena;  
+	char *refe;
+
+	refe = strdup("0123456789");
+	cadena = strdup("0123456789");
+  	string = strdup("0123456789");
+  
+	printf("Nuestra referencia incial es: %s\n", refe);
+    printf("5c ft_memmove(): %s\n", ft_memmove(&string[3], &string[0], 5));
+	printf("5c memcpy(): %s\n", memmove(&cadena[3], &cadena[0], 5));
+    
     return (0);
 }*/

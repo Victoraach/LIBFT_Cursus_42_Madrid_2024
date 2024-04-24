@@ -33,13 +33,11 @@ size_t	ft_strlcat(char *dest, const char *src, size_t n)
 	}
 }
 /*
-#include <string.h>
-#include <stddef.h>
 int    main(void)
 {
     char    dest[20] = "nathan";
     char    src[] = "anibal";
-    printf("%u\n", ft_strlcat(dest, src, sizeof(dest)));
+    printf("%zu\n", ft_strlcat(dest, src, sizeof(dest)));
     printf ("%s\n", dest);
     return (0);
 }*/

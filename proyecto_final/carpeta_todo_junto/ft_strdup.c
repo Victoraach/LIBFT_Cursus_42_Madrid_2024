@@ -31,14 +31,12 @@ char	*ft_strdup(const char *s1)
 	return (cpy);
 }
 /*
-#include <stdio.h>
 int    main(void)
 {
     char *ptr = "hola mundo";
     char *f;
 
     f = ft_strdup(ptr);
-    printf("La copia devuelve %s \n", f);
+    printf("La copia devuelve: %s \n", f);
     return(0);
-}
-*/
+}*/

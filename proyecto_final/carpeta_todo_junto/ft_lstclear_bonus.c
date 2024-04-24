@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-// Clears the list 'lst', freeing nodes with 'del' function
+// Delete and free node of 'lst' given and all consecutive nodes with 'del' ft
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*ptrlst;
@@ -28,23 +28,19 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	*lst = NULL;
 }
 /*
-int main ()
+int main (void)
 {
-    char *str3 = "Nodo numero 3";
-    char *str2 = "Nodo numero 2";
-    char *str1 = "Nodo numero 1";
-    
-    t_list  *node1 = ft_lstnew(str1);
-    t_list  *node2 = ft_lstnew(str2);
-    t_list  *node3 = ft_lstnew(str3);
+   
+    t_list *node1 = ft_lstnew(strdup("node 1"));
+    t_list *node2 = ft_lstnew(strdup("node 2"));
+    t_list *node3 = ft_lstnew(strdup("node 3"));
     
     node1->next = node2;
     node2->next = node3;
-    node3->next = NULL;
 
-    printf("%s\n", (char *) node1->content);
+    printf("\nnode1 = %s\n", (char *) node1->content);
 
-    ft_lstclear(&node1, free);
+    ft_lstclear(&node2, free);
 
     t_list *temp = node1;
     while (temp != NULL)
@@ -52,6 +48,6 @@ int main ()
       printf("%s\n", (char *) temp->content);
       temp = temp->next;
     }
+
     return 0;
-}
-*/
+}*/

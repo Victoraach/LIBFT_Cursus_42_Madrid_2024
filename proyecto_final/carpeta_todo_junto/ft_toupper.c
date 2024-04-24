@@ -20,21 +20,23 @@ int	ft_toupper(int c)
 	return (c);
 }
 /*
-#include <stdio.h>
+int main (void)
+{
+	char l1 = 'a';
+	char l2 = 'B';
+	char l3 = '$';
 
-int main (void){
-char l1 = 'a';
-char l2 = 'B';
-char l3 = '$';
-printf("\nletra mia antes: %c", l1);
-printf("\nletra mia antes: %c", l2);
-printf("\nletra mia antes: %c", l3);
-ft_toupper(l1);
-ft_toupper(l2);
-ft_toupper(l3);
-printf("\nletra mia antes: %c", ft_toupper(l1));
-printf("\nletra mia antes: %c", ft_toupper(l2));
-printf("\nletra mia antes: %c", ft_toupper(l3));
-return (0);
-}
-*/
+	printf("\nletra mia antes: %c", l1);
+	printf("\nletra mia antes: %c", l2);
+	printf("\nletra mia antes: %c", l3);
+
+	ft_toupper(l1);
+	ft_toupper(l2);
+	ft_toupper(l3);
+
+	printf("\nletra mia antes: %c", ft_toupper(l1));
+	printf("\nletra mia antes: %c", ft_toupper(l2));
+	printf("\nletra mia antes: %c", ft_toupper(l3));
+
+	return (0);
+}*/

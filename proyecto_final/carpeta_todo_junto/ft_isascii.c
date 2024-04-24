@@ -18,12 +18,14 @@ int	ft_isascii(int c)
 	return (c >= 0 && c <= 127);
 }
 /*
-#include <stdio.h>
-int	main()
+int	main(void)
 {
 	unsigned char	c;
+	unsigned char	d;
 
-	c = 127;
+	c = 130;
+	d = 126;
 	printf("%d\n", ft_isascii(c));
+	printf("%d\n", ft_isascii(d));
 	return (0);
 }*/

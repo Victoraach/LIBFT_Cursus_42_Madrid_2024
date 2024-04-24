@@ -19,26 +19,31 @@ void	ft_putchar_fd(char c, int fd)
 	return ;
 }
 /*
-#include <stddef.h>
-#include <stdio.h>
-#include <unistd.h>
-#include <fcntl.h>
-int main() 
+int main(void) 
 {
 	int fd;
 	fd = open("example.txt", O_WRONLY | O_CREAT);
 	
 	if (fd == -1)
 	{
-	
-	return (1);
-
+		perror("Error al abrir el archivo");
+		return (1);
 	}
-		ft_putchar_fd('1', fd);
-	
+
+	// Print file descriptor
+	printf("El descriptor de archivo (fd) es: %d\n", fd);
+
+	// Write character in file descriptor
+	ft_putchar_fd('a', fd);
+
+	// Close fd
 	close (fd);
 
+	if (close(fd) == -1)
+	{
+		perror("Error closing file");
+		return 1;
+	}
+
 	return (0);
-    
-}
-*/
+}*/

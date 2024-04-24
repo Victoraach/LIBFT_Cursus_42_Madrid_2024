@@ -24,11 +24,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (0);
 }
 /*
-#include <string.h>
-#include <stdio.h>
-#include <stddef.h>
-
-int    main()
+int main(void)
 {
     char cad[] = "Hola 42";
     char *f;

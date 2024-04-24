@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-// Creates new string from 's', each char modified by 'f'
+// Creates new string from 's', each char modified by 'f'. No modify source str
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	size_t	len;
@@ -35,6 +35,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (result);
 }
 /*
+char test_function(unsigned int i, char c) 
 {
 	i = 0;
 	while ( c >= 'a' && c <= 'z') 
@@ -42,15 +43,14 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		return (c);
 }
 
-#include <stddef.h>
-#include <stdio.h>
-#include <unistd.h>
-int main()
+int main(void)
 {
 	const char *str = "nathan";
     
-    printf("antes: %s\n", str);
-    printf("despues: %s\n", ft_strmapi(str, test_function));
+	printf("Referencia: %s\n", str);
+    printf("antes de aplicar ft: %s\n", str);
+    printf("Copia del str referencia: %s\n", ft_strmapi(str, test_function));
+	printf("despues de aplicar ft: %s\n", str);
+
     return 0;
-}
-*/
+}*/

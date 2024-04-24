@@ -30,8 +30,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	ptrlst->next = new;
 }
 /*
-#include <stdio.h>
-int main ()
+int main (void)
 {
 	t_list *node1 = ft_lstnew("Nodo_1");
     t_list *node2 = ft_lstnew("Nodo_2");
@@ -46,5 +45,4 @@ int main ()
 	printf("%s\n", (char *)node1->next->next->content);
 
 	return 0;
-}
-*/
+}*/

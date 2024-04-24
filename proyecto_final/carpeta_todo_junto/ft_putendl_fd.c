@@ -21,29 +21,33 @@ void	ft_putendl_fd(char *s, int fd)
 	write(fd, "\n", 1);
 }
 /*
-#include <stddef.h>
-#include <stdio.h>
-#include <unistd.h>
-#include <fcntl.h>
-int main ()
+int main (void)
 {
-	char *str = "nat han";
+	char *str = "nathan";
     
     int fd;
-
     fd = open("borrar.txt", O_WRONLY | O_CREAT);
+    
     if (fd == -1)
     {
-        perror("Error opening file");
+        perror("Error al abrir el archivo");
         return 1;
     }
+
+    // Print file descriptor
+    printf("El descriptor de archivo (fd) es: %d\n", fd);
+
+    // Write string in file descriptor
     ft_putendl_fd(str, fd);
+
+    // Close fd
+    close (fd);
 
     if (close(fd) == -1)
     {
         perror("Error closing file");
         return 1;
     }
+
     return (0);
-}
-*/
+}*/

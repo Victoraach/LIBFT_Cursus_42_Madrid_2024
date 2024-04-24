@@ -25,8 +25,7 @@ t_list	*ft_lstnew(void *content)
 	return (head);
 }
 /*
-#include <stdio.h>
-int main ()
+int main (void)
 {
 	t_list *new_list = ft_lstnew("Hello, World!");
 	t_list *empty_element = ft_lstnew(NULL);
@@ -41,5 +40,4 @@ int main ()
 	free(empty_element);
 
 	return 0;
-}
-*/
+}*/

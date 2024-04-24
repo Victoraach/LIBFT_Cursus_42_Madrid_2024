@@ -47,27 +47,30 @@ void	*duplicate_function(void *content)
 
 	str = (char *)content;
 	duplicated = ft_strdup(str);
-	printf("%s\n", duplicated);
+	printf("contenido del nodo copiado: %s\n", duplicated);
 	return (duplicated);
 }
 void	del_function(void *content)
 {
 	free(content);
 }
-int main()
+
+int main(void)
 {
 	t_list *lst = ft_lstnew(ft_strdup("nathan"));
-    ft_lstadd_back(&lst, ft_lstnew(ft_strdup(" anibal ")));
+    ft_lstadd_back(&lst, ft_lstnew(ft_strdup("anibal")));
     ft_lstadd_back(&lst, ft_lstnew(ft_strdup("alvarez")));
 
-	t_list *new_lst = ft_lstmap(lst, duplicate_function, del_function);
+	printf("\n");
 
-	t_list *temp = new_lst;
-	while (temp != NULL)
+	t_list *new_lst = ft_lstmap(lst, duplicate_function, del_function);
+	printf("\n");
+	while (new_lst != NULL)
 	{
-		printf("%s\n", (char *)temp->content);
-		temp = temp->next;
+		printf("Contenido de la nueva lista: %s\n", (char *)new_lst->content);
+		new_lst = new_lst->next;
 	}
+	printf("\n");
 
 	return 0;	
 }*/

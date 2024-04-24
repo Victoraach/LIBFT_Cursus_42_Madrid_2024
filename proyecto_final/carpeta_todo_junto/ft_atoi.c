@@ -36,9 +36,7 @@ int	ft_atoi(const char *str)
 	return (np * num);
 }
 /*
-#include <stdio.h>
-#include <stdlib.h>
-int    main()
+int    main(void)
 {
     int fake1;
     int fake2;

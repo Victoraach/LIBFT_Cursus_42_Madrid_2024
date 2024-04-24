@@ -18,12 +18,12 @@ int	ft_isalnum(int c)
 	return (ft_isalpha(c) == 1 || ft_isdigit(c) == 1);
 }
 /*
-#include <stdio.h>
-int	main()
+int	main(void)
 {
 	char	c;
 
 	c = 'R';
 	printf("%d\n", ft_isalnum(c));
+
 	return (0);
 }*/

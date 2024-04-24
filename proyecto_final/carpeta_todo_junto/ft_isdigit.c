@@ -18,16 +18,16 @@ int	ft_isdigit(int c)
 	return (c >= '0' && c <= '9');
 }
 /*
-#include <stdio.h>
-int	main()
+int	main(void)
 {
-	
-	char    c;
-    char   d;
-    c = 'R';
-    d = '1';
+	char	c;
+	char	d;
+
+    c = '1';
+	d = 'R';
 
 	printf("%d\n", ft_isdigit(c));
 	printf("%d\n", ft_isdigit(d));
+
 	return (0);
 }*/

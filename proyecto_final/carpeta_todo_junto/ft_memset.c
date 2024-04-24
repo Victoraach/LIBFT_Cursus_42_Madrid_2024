@@ -20,8 +20,6 @@ void	*ft_memset(void *s, int c, size_t n)
 	return (s);
 }
 /*
-#include <stddef.h>
-#include <stdio.h>
 int	main(void)
 {
 	char c;

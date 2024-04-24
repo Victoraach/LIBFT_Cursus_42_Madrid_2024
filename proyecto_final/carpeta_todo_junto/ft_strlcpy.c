@@ -32,18 +32,16 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	return (i);
 }
 /*
-#include <stddef.h>
-#include <stdio.h>
 int main (void)
 {
     char src[] = "Hello";
     char dest[6];
-    printf ("\ntamaño destino es: %d", ft_strlcpy(dest, src, sizeof(dest)));
+    printf ("\ntamaño destino es: %zu", ft_strlcpy(dest, src, sizeof(dest)));
     printf ("\nel destino es: %s", dest);
 
     char src2[] = "This is a very long string";
     char dest2[10];
-    printf ("\ntamaño destino es: %d", ft_strlcpy(dest2, src2, sizeof(dest2)));
+    printf ("\ntamaño destino es: %zu", ft_strlcpy(dest2, src2, sizeof(dest2)));
     printf ("\nel destino es: %s", dest2);
     return (0);
 }*/

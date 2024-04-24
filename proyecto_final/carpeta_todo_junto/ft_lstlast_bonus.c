@@ -22,8 +22,7 @@ t_list	*ft_lstlast(t_list *lst)
 	return (lst);
 }
 /*
-#include <stdio.h>
-int main ()
+int main (void)
 {
 	t_list *node1 = ft_lstnew("nathan");
 	t_list *node2 = ft_lstnew("anibal");
@@ -38,5 +37,4 @@ int main ()
 	printf("El último nodo contiene: %s\n", last_node->content);
 
 	return 0;
-}
-*/
+}*/

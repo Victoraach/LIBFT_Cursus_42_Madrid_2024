@@ -23,14 +23,12 @@ size_t	ft_strlen(const char *s)
 	return (s - cpy);
 }
 /*
-#include <stddef.h>
-#include <stdio.h>
 int	main(void)
 {
 	char	str[10] = "123456789";
 	int resultado;
 
 	resultado = ft_strlen(str);
-	printf("You have %d numbers in your array\n", resultado);
+	printf("tenemos una tamaño de %d en el array\n", resultado);
 	return(0);
 }*/

@@ -24,27 +24,33 @@ void	ft_putstr_fd(char *s, int fd)
 	}
 }
 /*
-#include <fcntl.h>
-#include <stdio.h>
-int main ()
+int main (void)
 {
 	char *str = "nathan";
 	
 	int fd;
-
 	fd = open("borrar.txt", O_WRONLY | O_CREAT);
+
 	if (fd == -1)
 	{
 		perror("Error opening file");
 		return 1;
 	}
+
+	// Print file descriptor
+    printf("El descriptor de archivo (fd) es: %d\n", fd);
+
+	// Write string in file descriptor
 	ft_putstr_fd(str, fd);
+
+	// Close fd
+    close (fd);
 
 	if (close(fd) == -1)
 	{
 		perror("Error closing file");
 		return 1;
 	}
+	
 	return (0);
-}
-*/
+}*/

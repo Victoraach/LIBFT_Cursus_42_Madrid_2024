@@ -20,48 +20,39 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 	del(lst->content);
 	free(lst);
 }
-
 /*
-#include <stdio.h>
-#include <stdlib.h>
-int main()
+void    delete_content(void *content)
 {
-    char *str3 = "Nodo numero 3";
-    char *str2 = "Nodo numero 2";
-    char *str1 = "Nodo numero 1";
-    
-    t_list  *node1 = ft_lstnew(str1);
-    t_list  *node2 = ft_lstnew(str2);
-    t_list  *node3 = ft_lstnew(str3);
-    
-    node1->next = node2;
-    node2->next = node3;
-    node3->next = NULL;
-    
-    void    delete_content(void *content)
-    {
       free(content);
-    }
+}
     
-    void    function_print(t_list *lst)
-    {
+void    function_print(t_list *lst)
+{
       while (lst)
       {
         printf("%s\n", (char *)(lst->content));
         lst = lst->next;
       }
-    }
+}
+
+int main(void)
+{
+    t_list *node1 = ft_lstnew(strdup("node 1"));
+    t_list *node2 = ft_lstnew(strdup("node 2"));
+    t_list *node3 = ft_lstnew(strdup("node 3"));
     
+    node1->next = node2;
+    node2->next = node3;
+    node3->next = NULL;
     
     printf("Lista Antes:\n");
     function_print(node1);
     
     ft_lstdelone(node3, free);
-    ft_lstdelone(node3, delete_content);
+    //ft_lstdelone(node3, delete_content);
     
     printf("Lista Despues:\n");
     function_print(node1);
     
     return (0);
-}
-*/
+}*/

@@ -30,10 +30,8 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	return (ret);
 }
 /*
-#include <stdio.h>
-#include <stddef.h>
-
-int main (void){
+int main (void)
+{
 
 	const char *str = "Separame esta cadena";
     
@@ -42,5 +40,4 @@ int main (void){
 
     return 0 ;
 
-}
-*/
+}*/

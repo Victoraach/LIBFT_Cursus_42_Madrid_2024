@@ -19,8 +19,6 @@ void	ft_bzero(void *s, size_t n)
 		((char *)s)[n] = 0;
 }
 /*
-#include <stddef.h>
-#include <stdio.h>
 int	main(void)
 {
 	char s[5] = "hola";

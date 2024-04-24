@@ -47,6 +47,7 @@ size_t	ft_words_len(char const *s, char c)
 	return (i);
 }
 
+// Frees memory allocated for each string in array 'res'
 void	ft_free(char **str)
 {
 	int	i;
@@ -99,12 +100,9 @@ char	**ft_split(char const *s, char c)
 	return (str);
 }
 /*
-#include <stddef.h>
-#include <stdio.h>
-#include <unistd.h>
-int    main()
+int    main(void)
 {
-    char **f = ft_split(" hola mundo 42 !", 'o');
+    char **f = ft_split("hola mundo 42 !", ' ');
     if (f)
     {
         for (int i = 0; f[i] != NULL; i++)

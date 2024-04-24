@@ -25,18 +25,15 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (0);
 }
-
 /*
-#include <stdio.h>
-
 int main (void){
   
 char *str = "Hello, World!";
 
-printf("\nletra es: %s", ft_strchr(str, 'W'));
-printf("\nletra es: %s", ft_strchr(str, 'o'));
-printf("\nletra es: %s", ft_strchr(str, 'z'));
-printf("\nletra es: %s", ft_strchr(str, '\0'));
+printf("\nEl string es: %s", str);
+printf("\nletra es W: %s", ft_strchr(str, 'W'));
+printf("\nletra es o: %s", ft_strchr(str, 'o'));
+printf("\nletra es z: %s", ft_strchr(str, 'z'));
+printf("\nletra es 'vacio': %s", ft_strchr(str, '\0'));
 return (0);
-}
-*/
+}*/
